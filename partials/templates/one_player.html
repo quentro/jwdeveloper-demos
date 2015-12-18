@@ -1,0 +1,22 @@
+<!-- LEFT COLUMN - VIDEO PLAYER HERE -->
+<div class="col span_1_of_2">
+	<div id="container"></div>
+</div>
+<!-- -->
+
+
+<!-- RIGHT COLUMN - CODE SNIPPET HERE -->
+<div class="col span_1_of_2">
+	<div class="placeCode"></div>
+</div>
+<!-- -->
+
+<!-- JS SCRIPTS -->
+<script type="text/javascript">
+var playerInstance = jwplayer('container');
+playerInstance.setup({
+	{{ media.config  }}: "{{ demo.media.source }}",
+	width: 640,
+	height: 360,
+})
+</script>

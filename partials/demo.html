@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<!-- load meta tags, stylesheets and javascript -->
+	<ng-include src="'partials/templates/demo_header.html'"></ng-include>
+
+	<body>
+	<nav>
+		<a href="//developer.jwplayer.com"><img src="//developer.jwplayer.com.s3.amazonaws.com/img/jw-logo.svg"/></a><p>developer</p>
+	</nav>
+
+	<header>
+		<h2>{{ title }}</h2>
+    <p>{{ description }}</p> 
+	</header>
+
+
+	<div class="metadata">
+    <ul>
+      <li><span>License:</span> {{ license }}</li>
+      <li><span>Player Version:</span> {{ version }}</li>
+      <li><a href="{{documentation}}">Documentation</a></li>
+    </ul>
+	</div>
+
+
+	<div class="disclaimer">
+			<p>Please Note: This player implementation is a Proof of Concept only provided to show the possibilities of the JW Player and Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</p>
+		</div>
+
+	<div id="demo-content">
+		<ng-include src="'partials/templates/{{template}}.html'"></ng-include>
+	</div>
+	</body>
+</html>
